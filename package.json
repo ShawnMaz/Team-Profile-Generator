@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "The purppose of this application is to create a terminal based application that will ask the user to input the names and information about their employees. The program will then automatically display the information in a webpage. This application applies the Object Oriented Programming paradigm alogn with Test Driven Developement to accomplish the desired tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShawnMaz/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "OOP",
+    "TDD"
+  ],
+  "author": "Shantanu Mazumder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShawnMaz/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/ShawnMaz/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
