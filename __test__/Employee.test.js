@@ -1,10 +1,27 @@
 const Employee = require('../lib/Employee');
 
-test('Checks the Employee class for name, id, email and role', () => {
-    const employee = new Employee('Employee1', 88, 'employee@fakemail.com');
+test('Create Employee object', () => {
+    const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
 
-    expect(employee.getName()).toEqual(expect.any(String));
-    expect(employee.getId()).toEqual(expect.any(Number));
+    expect(employee.name).toBe('Shawn');
+    expect(employee.id).toBe(88);
+    expect(employee.email).toEqual(expect.stringContaining('@'));
+});
+
+test('get employee name', () => {
+    const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
+
+    expect(employee.getName()).toBe('Shawn');
+});
+
+test('get employee id', () => {
+    const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
+
+    expect(employee.getId()).toBe(88);
+});
+
+test('get employee email', () => {
+    const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
+
     expect(employee.getEmail()).toEqual(expect.stringContaining('@'));
-    expect(employee.getRole()).toBe('Employee');
 });
