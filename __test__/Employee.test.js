@@ -8,19 +8,19 @@ test('create Employee object', () => {
     expect(employee.email).toEqual(expect.stringContaining('@'));
 });
 
-test('get employee name', () => {
+test("get employee's name as a string", () => {
     const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
 
     expect(employee.getName()).toBe('Shawn');
 });
 
-test('get employee id', () => {
+test("get employee's id as a number", () => {
     const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
 
     expect(employee.getId()).toBe(88);
 });
 
-test('get employee email', () => {
+test("get employee's email as a string", () => {
     const employee = new Employee('Shawn', 88, 'shawn@fakemail.com');
 
     expect(employee.getEmail()).toEqual(expect.stringContaining('@'));
