@@ -55,18 +55,9 @@ function createIntern(intern){
 }
 
 const template = (team) => {
-    const managerArray = [];
     const manager = team.filter(teamMember => teamMember.getRole() === 'Manager').map(manager => createManager(manager));
-    managerArray.push(manager);
-
-
-    const engineerArray = [];
     const engineer = team.filter(teamMember => teamMember.getRole() === 'Engineer').map(engineer => createEngineer(engineer));
-    engineerArray.push(engineer);
-
-    const internArray = [];
     const intern = team.filter(teamMember => teamMember.getRole() === 'Intern').map(intern => createIntern(intern));
-    internArray.push(intern);
 
     return`
     
