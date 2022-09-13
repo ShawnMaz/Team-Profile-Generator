@@ -55,7 +55,6 @@ function createIntern(intern){
 }
 
 const template = (team) => {
-    console.log(team);
     const managerArray = [];
     const manager = team.filter(teamMember => teamMember.getRole() === 'Manager').map(manager => createManager(manager));
     managerArray.push(manager);
